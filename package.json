@@ -1,6 +1,6 @@
 {
   "name": "download-table-xlsx",
-  "version": "1.0.0-beta",
+  "version": "0.0.9",
   "description": "前端零理解成本下载xlsx",
   "main": "lib/bundle.esm.js",
   "module": "lib/bundle.esm.js",
@@ -9,6 +9,9 @@
     "clean": "rm -rf lib/*",
     "build": "npm run clean && npx rollup -c && npm run build:types",
     "build:types": "npx tsc"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.2",
