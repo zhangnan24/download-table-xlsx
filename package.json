@@ -1,0 +1,32 @@
+{
+  "name": "download-table-xlsx",
+  "version": "1.0.0-beta",
+  "description": "前端零理解成本下载xlsx",
+  "main": "lib/bundle.esm.js",
+  "module": "lib/bundle.esm.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf lib/*",
+    "build": "npm run clean && npx rollup -c && npm run build:types",
+    "build:types": "npx tsc"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@types/lodash-es": "^4.17.7",
+    "@types/react": "^18.0.35",
+    "rollup": "^2.68.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "xlsx-js-style": "^1.2.0"
+  }
+}
